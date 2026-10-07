@@ -159,6 +159,19 @@ account) and you will land on the task dashboard.
 
 ---
 
+### Running the tests
+
+```bash
+php artisan test
+```
+
+The suite covers authentication, task CRUD, completion toggle, validation,
+search/filtering and ownership rules (**38 tests**). `phpunit.xml` forces
+`DB_CONNECTION=sqlite` with `DB_DATABASE=:memory:`, so tests never touch — and
+never wipe — your real MySQL data.
+
+---
+
 ## Screenshots
 
 | | |
